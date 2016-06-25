@@ -62,15 +62,15 @@
     $(document).ready(function(){
       map = new GMaps({
         el: '#map',
-        lat: 25.248343,
-        lng: 51.490605,
+        lat: 13.0619942,
+        lng: 77.5855137,
         zoomControl : true,
         scrollwheel:false,
         zoomControlOpt: {
             style : 'SMALL',
             position: 'TOP_LEFT'
         },
-        panControl : false,
+        panControl : true,
         streetViewControl : false,
         mapTypeControl: false,
         overviewMapControl: false
