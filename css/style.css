@@ -66,15 +66,17 @@ ul {
 
 /* ----------------- Logo Css ------------------ */
 
-.logo a h1 {
+.logo  {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 2px;
+    padding-top: 2px;
     text-transform: uppercase;
   font-family: "PT Sans Narrow",sans-serif;
-  color:#11C3F0
+  color:#118ad5;
+  margin-top: 20px;
+  margin-bottom:20px;
 }
 
 .mainmenu-area {
@@ -83,6 +85,9 @@ ul {
     top: 0;
     width: 100%;
     z-index: 999;
+	background: #fff;
+	opacity: .95;
+    filter: alpha(opacity=95);
 }
 
 div#sticky-wrapper {
@@ -108,10 +113,10 @@ header.welcome-area, div#sticky-wrapper, div.mainmenu-area, div.logo h1 {
     height: 100%;
     width: 100%;
     content: "";
-    background: #000;
+    background: #fff;
     z-index: -1;
-    opacity: .8;
-    filter: alpha(opacity=80);
+    opacity: .95;
+    filter: alpha(opacity=95);
 }
 
 header.welcome-area, div#sticky-wrapper, .mainmenu-area {
@@ -129,6 +134,8 @@ header.welcome-area, div#sticky-wrapper, .mainmenu-area {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 25px;
+	margin-top: 10px;
+	margin-bottom:10px;
 }
 
 /* ------------------ Slider Area Css -------------------- */
@@ -172,17 +179,12 @@ header.welcome-area, div#sticky-wrapper, .mainmenu-area {
 }
 
 .swiper-slide.slide_four {
-  background: url(../images/slider/2.jpg) no-repeat scroll 0 0;
+  background: url(../images/slider/4.jpg) no-repeat scroll 0 0;
   background-size:cover;
 }
 
 .swiper-slide.slide_five {
-  background: url(../images/slider/1.jpg) no-repeat scroll 0 0;
-  background-size:cover;
-}
-
-.swiper-slide.slide_five {
-  background: url(../images/slider/3.jpg) no-repeat scroll 0 0;
+  background: url(../images/slider/5.jpg) no-repeat scroll 0 0;
   background-size:cover;
 }
 
@@ -211,7 +213,7 @@ header.welcome-area, div#sticky-wrapper, .mainmenu-area {
 }
 
 .slide-text h2 {
-  background: #313fa0 none repeat scroll 0 0;
+ 
   color: #fff;
   font-family: "PT Sans Narrow",sans-serif;
   font-size: 48px;
@@ -222,7 +224,7 @@ header.welcome-area, div#sticky-wrapper, .mainmenu-area {
 }
 
 .slide-text p {
-  background: #000 none repeat scroll 0 0;
+  background: #002060 none repeat scroll 0 0;
   color: #fff;
   display: inline-block;
   font-family: "PT Sans Narrow",sans-serif;
@@ -271,7 +273,7 @@ ul.nav.navbar-nav {
 }
 
 ul.nav.navbar-nav li a {
-  color: #fff;
+  color: #118ad5;
   display: block;
   font-size: 16px;
   padding-bottom: 30px;
@@ -281,7 +283,7 @@ ul.nav.navbar-nav li a {
 }
 
 ul.nav.navbar-nav li.active a {
-  color: #11c3f0;
+  color: #ff2f2f;
 }
 
 ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li a:focus {
@@ -304,7 +306,7 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li a:focus {
     color: #11c3f0;
     display: block;
     font-size: 36px;
-    margin-bottom: 90px;
+    margin-bottom: 5px;
     margin-right: 25px;
 }
 
@@ -358,7 +360,7 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li a:focus {
 }
 
 .two-col-bg {
-  background: #11c3f0 none repeat scroll 0 0;
+  background: #002060 none repeat scroll 0 0;
   color: #ffffff;
   position: relative;
 }
@@ -367,28 +369,20 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li a:focus {
   min-height: 150px;
   padding: 60px 30px 40px 0;
   position: relative;
-  width: 80%;
-}
-
-.two-col-bg .content-column1 {
-  min-height: 150px;
-  padding: 60px 30px 40px 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 80%;
+  width: 50%;
 }
 
 .two-col-bg .image-column {
-  background-image:url(../images/two-col-bg-1.jpg);
-  background-position: center center;
+  background-image:url(../images/productiviti.png);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  width: 20%;
+  width: 50%;
+  margin: 5px;
 }
 
 .column-title {
@@ -505,8 +499,8 @@ ul.styled-list-one li:after {
     content: "";
     height: 0%;
     left: 0;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    opacity: 0.1;
+    filter: alpha(opacity=10);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -518,6 +512,9 @@ ul.styled-list-one li:after {
 .team-thumb img {
   -webkit-transition:all .30s linear 0s;
           transition:all .30s linear 0s;
+	  margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .team-thumb {
@@ -623,8 +620,6 @@ ul.filters-tab li.active , ul.filters-tab li:hover {
 }
 
 .hover-tablecell a {
-    background: #11C3F0 none repeat scroll 0 0;
-    border-radius: 50%;
     color: #fff;
     display: inline-block;
     font-size: 18px;
